@@ -1,0 +1,1073 @@
+body{
+    background-color: #f5f5f7;
+    margin: 0;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+*{
+    text-align: right;
+}
+
+a {
+    color:#F8F8F8;
+    text-decoration: none;
+}
+.container a{
+    color: #032615;
+}
+.container .card p a{
+    font-size:larger;
+}
+.currnt{
+    font-weight: bold;
+}
+.breadcrumb-nav a{
+ color: #032615;
+}
+
+.breadcrumb-nav{
+    margin: 1em;
+}
+.breadcrumb-nav span{
+    color: #032615;
+    font-weight: bold;
+}
+
+.top-announcement-bar{
+    background-color: #032615;
+    text-align: center;
+    padding: .5rem .75rem;
+    font-size: 1em;
+}
+
+.top-announcement-bar p{
+    color: #fff;
+    text-align: center;
+}
+
+header{
+    text-align: right;
+    padding: 0 0 0.5em ;
+    padding: 0px;
+    position: relative;
+}
+
+.header-logo-box img{
+    width: 135px;
+}
+
+.main-nav-bar{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    width: 630px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;  
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+header nav a{
+  padding: .5rem .75rem;
+  border-radius: .6rem;
+  color: #032615;
+  background: transparent;
+  text-decoration: none;
+}
+
+header nav a:hover{
+  background: #032615;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homepage-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding-right: 50px;
+}
+
+.tip-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e2e9c6;
+    padding: 25px 50px 25px 25px;
+}
+
+.tip-card img{
+    width: 300px;
+    margin-right: 2.5em;
+}
+
+#tip-sec{
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e9c6;
+}
+
+#tip-sec p{
+    width: 75%;
+    color: #032615;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+#tip-sec p span{
+    padding-top: 1em;
+    display: block;
+    font-size: 60%;
+    color: #12472d;
+}
+
+#tip{
+    background-color: #032615;
+    text-align: center;
+    padding: .5rem .75rem;
+    font-size: 1em;
+}
+
+#op-sec{
+    background-color: #174538;
+    padding-top: 2em;
+}
+
+.homepage-card img{
+    width: 300px;
+}
+
+
+#tip-title{
+    color: #fff;
+    text-align: center;
+}
+
+
+#hero-title{
+    color: #12472d;
+    font-size: 230%;
+}
+
+#hero-p {
+    width: 95%;
+    color: #032615;
+    font-size: 120%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+td{
+    border: solid #f9f7f7 2px;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #12472d;
+    color: white;
+    text-align: center;
+    border: solid #194d34 2px;
+    padding: 15px;
+}
+
+
+#sidebar{
+    margin: 25px;
+}
+
+.service {
+    padding: 20px;
+    width: 25%;
+    border: solid #f9f7f7 2px;
+    border-radius: 6px;
+}
+
+.service p {
+    text-align: center;
+}
+
+#services-title{
+    text-align: center;
+    color: #12472d;
+    font-size: 230%;
+}
+
+#testimonials-title{
+    text-align: center;
+    color: #e2e9c6;
+    font-size: 230%;
+}
+
+#services p, #users{
+    text-align: center;
+    font-size: 120%;
+    color: #032615;
+}
+
+#users{
+    text-align: center;
+    font-size: 120%;
+    color: #dff299
+}
+
+::selection{
+    color: white;
+    background: #12472d;
+
+}
+:focus{
+    border: #1f7e5c solid ;
+}
+
+.data-table-container{
+    background-color: #ffff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.main-title{
+    text-align: center;
+    color: #06402B;
+    font-size: 35px;
+    padding: 10px;
+    border-bottom: solid #d0cfcf;
+    width: 25%;
+    margin: 25px auto 50px auto;
+    margin-bottom: 50px;
+}
+
+.main-title-h2 {
+    text-align: center;
+    color: #06402B;
+    font-size: 35px;
+    padding: 10px;
+    border-bottom: solid #d0cfcf;
+    width: 25%;
+    margin: 25px auto 50px auto;
+    margin-bottom: 50px;
+}
+.sec-title{
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card{
+    position: relative;
+    background-color: #ffff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+    margin: 20px;
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.hovering{
+    transition: transform 0.3s ease;
+}
+
+.hovering:hover{
+    transform: translateY(-10px);
+}
+
+.card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1f7e5c;
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-g{
+    background-color: #2e584c;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 450px;
+}
+
+.profile-g{
+    margin-top: 2em;
+    width: 175px;
+}
+
+.card p, .scroll-card p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #032615;
+}
+
+
+.card-g p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    border-radius: 25px;
+}
+
+.card img, .scroll-card img{
+    width: 250px;
+}
+
+.edu-l{
+    list-style: circle;
+}
+
+.scroll-container {
+    width: 75%;
+    display: flex;         
+    overflow: scroll;    
+    white-space: nowrap;  
+    padding: 10px;
+    background-color: #f5f5f7;
+}
+
+.scroll-card {
+    flex: 0 0 auto;     
+    width: 25%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    height: 450px;
+}
+
+
+.card a {
+  text-decoration: none;
+  color: #032615;
+  font-weight: bold;
+}
+
+
+.stars{
+    margin-top: 1em;
+    width: 250px;
+}
+
+.side{
+    display: flex;
+    align-items: flex-start;
+}
+
+.sorting{
+    height: 35px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 15px; 
+    font-size: 16px;
+    color: #3A6044; 
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+    margin-top: 25px;
+}
+.choose{
+    width:100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 15px; 
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;;
+    color: #3A6044; 
+    appearance: none;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.my-form {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 25px;
+
+}
+
+.my-form ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+}
+
+.top-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.btn a{
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #06402B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    top: 35px;
+}
+.btn-s a{
+    padding: 12px 20px;
+    background-color: #06402B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    top: 25%;
+    left:35%;
+}
+.card-button{
+    padding: 12px 20px;
+    background-color: #06402B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    position:relative;
+    top: 35px; 
+}
+
+.my-form .sel , .sel .req{
+    text-align: right;
+}
+
+.req::after{
+    content: " *";
+    color: #b40a0a;
+}
+
+.image-placeholder{
+    height: 330px;
+}
+
+.small-table{
+    width: 1000px;
+}
+
+.upload-btn{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:8px;
+  background: #1f7e5c; /* أخضر غامق */
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  border:0;
+  font-family: inherit;
+  transition: .2s;
+    position: relative;
+    left: 42%;
+}
+
+.upload-btn:hover{
+  background:#0b5a40; /* أخضر أفتح شوي عند الهوفر */
+}
+
+.visually-hidden{
+  position:absolute;
+  width:0.1px; height:0.1px;
+  opacity:0; overflow:hidden;
+  z-index:-1;
+    position: relative;
+    left: 35%;
+}
+
+/* 2. تنسيق قسم الصورة */
+.image-section {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder::before,
+.image-placeholder::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #aaa;
+}
+
+.image-placeholder::before {
+    transform: rotate(45deg);
+}
+
+.image-placeholder::after {
+    transform: rotate(-45deg);
+}
+
+/* تنسيق حقل رفع الملف لجعله يظهر كزر */
+.file-upload-field {
+    width: 150px;
+    height: auto;
+    padding: 0;
+}
+
+/* إخفاء عنصر الإدخال الافتراضي */
+.file-upload-field input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* تنسيق زر "إضافة صورة" الفعلي (باستخدام label) */
+.btn-add-image {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 3. تنسيق حاوية الحقول الرئيسية (باستخدام فئة .fields) */
+.fields {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+/* 4. تنسيق كل حقل إدخال (form-field) */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%; /* أساس التخطيط ذو العمودين */
+}
+
+.form-field label {
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #333;
+    font-size: 14px;
+}
+
+/* جعل الحقول التي تحتاج عرض كامل تمتد على السطر */
+.full-width {
+    width: 100%;
+}
+
+/* 5. تنسيق عناصر الإدخال والنصوص */
+.form-field input[type="text"],
+.form-field input[type="date"],
+.form-field input[type="email"],
+.form-field textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* 6. تنسيق زر الإرسال النهائي (باستخدام فئة .button و .text-center) */
+.submit-area {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-submit {
+    text-align: center;
+    width: 80px;
+    padding: 12px 20px;
+    background-color: #06402B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color:#032615;
+    color:#F8F8F8 ;
+    padding: 2em 0;
+    position: relative; 
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-slogan {
+    text-align: center;
+    font-size: 1em; 
+    padding: 0px;
+    margin: 0px;
+    position: relative; 
+    z-index: 1; 
+}
+
+.footer-slogan::before {
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1; 
+}
+
+#slogan-text-wrapper {
+    display: inline-block; 
+    background-color: #032615;
+    font-weight: bold;
+    padding: 0 1em; 
+    color:#F8F8F8;
+}
+.footer-details {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    padding-top: 2em; 
+    padding-bottom: 1.5em;
+    border-top: none; 
+    margin-top: 0;
+}
+
+.footer-logo-box img {
+    width: 100px; 
+    height: auto;
+    display: block;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    direction: ltr;
+}
+
+.social-icons img {
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+.quick-links ul li {
+    margin-bottom: 0.3em;
+}
+
+.quick-links a {
+    color:#F8F8F8;
+    display: block;
+    text-decoration: none;
+}
+
+.contact-info, .quick-links {
+    margin: 0 1em;
+    text-align:center;
+}
+.copyright {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 1em;
+}
+
+.frq-card {
+    width: 750px;
+    background-color:#fff;
+    border-radius: 8px;
+    padding: 2em;
+    margin-top: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.faq-term {
+    font-weight: bold; /* Text formatting */
+    color:#032615;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    border-bottom: 1px solid #06402B; /* Dotted border for separation */
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    cursor: pointer; /* Suggests interactivity */
+}
+
+.frq-card dt:first-of-type {
+    margin-top: 0; /* Remove top margin for the first question */
+}
+
+.faq-definition {
+    padding-right: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 1.5em;
+    color:#06402B;
+    line-height: 1.6;
+    text-align: justify;
+    border-right: 3px solid #06402B;
+    margin-right: 0px;
+}
+
+
+.faq-question-form-section {
+    width: 750px;
+    margin: 3em auto 2em;
+    padding: 2em;
+    padding-bottom: 3em;
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question-form-section h2 {
+    text-align: center;
+    color:#06402B;
+    margin-bottom: 1.5em;
+    border-bottom: 2px solid #06402B;
+    padding-bottom: 0.5em;
+}
+
+.faq-question-form-section form {
+    display: flex; /* Use Flexbox for form layout */
+    flex-direction: column;
+    gap: 7px;
+}
+
+.faq-question-form-section label {
+    font-weight: bold;
+    color:#06402B;
+    margin-bottom: 0.5em;
+}
+
+.faq-question-form-section textarea {
+    width: 100%;
+    border: 1px solid #06402B;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding/border are inside the set width */
+}
+
+.faq-question-form-section .card-button {
+    align-self:center; /* Align button to the right side using Flexbox */
+    justify-content:flex-start;
+}
+
+/* Ensure container text is aligned correctly */
+.container p {
+    text-align: center;
+}
+
+.serv img{
+  width: 250px;
+}
+
+.serv{
+    width: 100%;
+}
+
+/* جعل القياس أسهل */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* الصور تكون مرنة */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* نلفّ الهيدر بشكل مرتب */
+.main-header {
+  width: 100%;
+}
+
+/* شريط الناف بار العلوي */
+.main-nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* شعار هُجّة */
+.header-logo-box img {
+  max-height: 70px;
+}
+
+/* قائمة الروابط */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.main-nav a.nav-item {
+  text-decoration: none;
+  /* لو عندك ألوان سابقة، هذي ما تلغيها لو حطيتيها قبل بخصائص مختلفة */
+}
+
+/* كرت الهيرو في الهوم بيج */
+.homepage-card {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homepage-card > div {
+  flex: 1;
+}
+
+.homepage-card img {
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+/* كروت الخدمات / آراء العملاء */
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* كروت الخدمات */
+.card,
+.card-g {
+  flex: 1 1 280px;   /* تكبر/تصغر بحسب المساحة */
+  max-width: 32%;
+}
+
+/* قسم النصيحة اليومية */
+#tip-sec,
+#op-sec,
+#services {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* الفوتر يكون بمساحة عرض ثابتة */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+/* end for big screens */
+/*strat for mid screens*/
+/* شاشات أقل من 992px تقريبًا (تابلت) */
+@media (max-width: 992px) {
+  .main-nav-bar {
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 0.75rem;
+  }
+
+  .homepage-card {
+    gap: 1rem;
+  }
+
+  .card,
+  .card-g {
+    max-width: 48%; /* عمودين بدل ثلاثة */
+  }
+}
+/*end of mid screens, strat of phone size screen*/
+/* شاشات الجوال تقريبًا أقل من 768px */
+@media (max-width: 768px) {
+
+  /* الهيدر والناف بار */
+  .main-nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main-nav ul li {
+    width: 100%;
+  }
+
+  .main-nav a.nav-item {
+    display: block;
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* الهيرو يصير عمود واحد */
+  .homepage-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepage-card > div {
+    width: 100%;
+  }
+
+  #hero-title,
+  #hero-p {
+    text-align: center;
+  }
+
+  /* الكروت وحدة تحت الثانية */
+  .card,
+  .card-g {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* النصيحة */
+  #tip-sec,
+  #op-sec,
+  #services {
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+
+  .tip-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tip-card img {
+    max-width: 250px;
+    margin-inline: auto;
+  }
+
+  /* الفوتر: العناصر تنزل تحت بعض */
+  .footer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
