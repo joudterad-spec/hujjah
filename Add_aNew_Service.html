@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>حجة | إضافة خدمة جديدة</title>
     <link rel="stylesheet" href="style.css">
+    <script src="add_service.js" defer></script>
 </head>
 <body>
 <header class="main-header">
-        <div class="top-announcement-bar">
+         <div class="top-announcement-bar">
             <p>أحصل على استشارة مجانية عند انضمامك للمرة الأولى! </p>
         </div>
         <div class="main-nav-bar">
@@ -26,32 +27,34 @@
 
 
     <div class="breadcrumb-nav">
-        <a href="">الصفحة الرئيسية</a> ◁ <a href="Provider_Dashboard.html">لوحة الأعضاء</a> ◁ <span>إضافة خدمة جديدة</span>
+        <a href="index.html">الصفحة الرئيسية</a> ◁ <a href="Provider_Dashboard.html">لوحة الأعضاء</a> ◁ <span>إضافة خدمة جديدة</span>
     </div>
 
     <main>
         <h1 class="main-title">إضافة خدمة جديدة</h1>
         <div class="container">
-            <form class="my-form" dir="rtl" action="Add_aNew_Service.html" method="POST">
-                        <div class="top-section">
-                            <div class="fields inputs-flex-container">
-                                <div class="form-field field-name"><label class="req">اسم الخدمة: </label><input type="text"></div>
-                                <div class="form-field field-name"><label class="req">سعر الخدمة: </label><input type="text"></div>
-                                <div class="form-field full-width"><label class="req">وصف الخدمة: </label><textarea rows="3"></textarea></div>
-                            </div> 
-                        </div>
-                        
-                        <div class="text-center">
-                            <input type="file" required id="pic" class="visually-hidden">
-                            <label for="pic" class="upload-btn req">إضافة صورة</label>
-                        </div>
-
-                        <div class="text-center submit-area">
-                            <button type="submit" class="btn-submit">إضافة</button>
-                        </div>
-                        
-                    </form>
+    <form class="my-form" dir="rtl" action="Add_aNew_Service.html" method="POST">
+        <div class="top-section">
+            <div class="fields inputs-flex-container">
+                <div class="form-field field-name"><label class="req">اسم الخدمة: </label><input type="text" id="serviceName" ></div>
+                
+                <div class="form-field field-name"><label class="req">سعر الخدمة: </label><input type="text" id="servicePrice" ></div>
+                
+                <div class="form-field full-width"><label class="req">وصف الخدمة: </label><textarea rows="3" id="serviceDesc" ></textarea></div>
+            </div> 
         </div>
+        
+        <div class="text-center">
+            <input type="file"  id="pic" class="visually-hidden">
+            <label for="pic" class="upload-btn req">إضافة صورة</label>
+        </div>
+
+        <div class="text-center submit-area">
+            <button type="submit" class="btn-submit">إضافة</button>
+        </div>
+        
+    </form>
+</div>
     </main>
 <footer>
     <div class="footer-content">
@@ -91,5 +94,6 @@
       <p class="copyright">جميع الحقوق محفوظة لحُجة © 2025</p>
     </div>
   </footer>
+    <script src="theme.js"></script>
 </body>
 </html>
