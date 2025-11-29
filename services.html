@@ -7,6 +7,7 @@
     </head>
     <body>
     <header class="main-header">
+ 
         <div class="top-announcement-bar">
             <p>أحصل على استشارة مجانية عند انضمامك للمرة الأولى! </p>
         </div>
@@ -31,41 +32,50 @@
         <main class="container">
                 <h1 class="main-title">الخدمات</h1>
                 <div class="side">
-                    <select name="sorting" class="sorting">
+                   <select id="sortSelect" name="sorting" class="sorting">
+    <option value="default" disabled selected>الترتيب حسب</option>
 
-                        <option disabled selected>الترتيب حسب</option>
+    <optgroup label="بالاسم">
+        <option value="inc-name">من الأقل للأعلى</option>
+        <option value="dec-name">من الأعلى للأقل</option>
+    </optgroup>
 
-                        <optgroup label="بالاسم">
-                            <option value="inc by name">من الأقل للأعلى</option>
-                            <option value="dec by name">من الأعلى للأقل</option>
-                        </optgroup>
+    <optgroup label="بالسعر">
+        <option value="inc-price">من الأقل للأعلى</option>
+        <option value="dec-price">من الأعلى للأقل</option>
+    </optgroup>
+</select>
+                <div id="servicesList" class="cards-container">
 
-                        <optgroup label="بالسعر">
-                            <option value="inc by price">من الأقل للأعلى</option>
-                            <option value="dec by price">من الأعلى للأقل</option>
-                        </optgroup>
+    <div class="card" 
+         data-name="التمثيل القانوني والقضائي" 
+         data-price="5000">
+        <img src="images/represent.png" alt=" صورة للتعبير عن التمثيل القانوني والقضائي ">
+        <p>التمثيل القانوني والقضائي</p>
+        <p> التمثيل القانوني والقضائي مع خبراء </p>
+        <div class="price"><p>5000 ر.س</p></div>
+    </div>
 
-                    </select>
-                <div class="cards-container">
-                    <div class="card">
-                        <img src="images/represent.png" alt=" صورة للتعبير عن التمثيل القانوني والقضائي ">
-                        <p>التمثيل القانوني والقضائي</p>
-                        <p> التمثيل القانوني والقضائي مع خبراء </p>
-                        <div class="price"><p>5000ر.س</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="images/contract.png" alt=" صورة للتعبير عن خدمات العقود  ">
-                        <p>خدمات العقود</p>
-                        <p>إعداد وصياغة ومراجعة العقود وفق احتياجات العملاء.</p>
-                        <div class="price"><p>700ر.س</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="images/consolting.png" alt=" صورة للتعبير عن الاستشارات القانونية ">
-                        <p>الاستشارات القانونية</p>
-                        <p>جلسات استشارية متخصصة وسريعة لتغطية استفساراتك.</p>
-                        <div class="price"><p>300ر.س</p></div>
-                    </div>
-                </div>
+    <div class="card" 
+         data-name="خدمات العقود" 
+         data-price="700">
+        <img src="images/contract.png" alt=" صورة للتعبير عن خدمات العقود ">
+        <p>خدمات العقود</p>
+        <p>إعداد وصياغة ومراجعة العقود وفق احتياجات العملاء.</p>
+        <div class="price"><p>700 ر.س</p></div>
+    </div>
+
+    <div class="card" 
+         data-name="الاستشارات القانونية" 
+         data-price="300">
+        <img src="images/consolting.png" alt=" صورة للتعبير عن الاستشارات القانونية ">
+        <p>الاستشارات القانونية</p>
+        <p>جلسات استشارية متخصصة وسريعة لتغطية استفساراتك.</p>
+        <div class="price"><p>300 ر.س</p></div>
+    </div>
+
+</div>
+
                 </div>
         </main>
 <footer>
@@ -106,6 +116,8 @@
       <p class="copyright">جميع الحقوق محفوظة لحُجة © 2025</p>
     </div>
   </footer>
+  <script src="theme.js"></script>
+<script src="services.js"></script>
 </body>
 
 </html>
