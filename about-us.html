@@ -7,7 +7,7 @@
     </head>
     <body>
 <header class="main-header">
-        <div class="top-announcement-bar">
+         <div class="top-announcement-bar">
             <p>أحصل على استشارة مجانية عند انضمامك للمرة الأولى! </p>
         </div>
         <div class="main-nav-bar">
@@ -55,40 +55,68 @@
 
                 <h1 class="main-title">انضم إلى فريق حُجّة</h1>
                 <div class="container">
-                    <form class="my-form" dir="rtl" action="about-us.html" method="POST">
-                        <div class="top-section">
+        <form id="joinForm" class="my-form" dir="rtl" action="about-us.html" method="POST" enctype="multipart/form-data" novalidate>
+    <div class="top-section">
 
-                            <div class="fields inputs-flex-container">
-                                <div class="form-field field-name"><label class="req">اسم العضو: </label><input type="text" required></div>
-                                <div class="form-field field-date"><label class="req">تاريخ الميلاد: </label><input type="date" required></div>
-                                <div class="form-field full-width"><label class="req">البريد الإلكتروني: </label><input type="email" required></div>
-                                <div class="form-field full-width"><label class="req">الخبرات: </label><textarea rows="3" required></textarea></div>
-                                <div class="form-field full-width"><label class="req">المهارات: </label><textarea rows="3" required></textarea></div>
-                            </div>
+        <div class="fields inputs-flex-container">
+            <!-- اسم العضو -->
+            <div class="form-field field-name">
+                <label for="jt-name" class="req">اسم العضو: </label>
+                <input type="text" id="jt-name" name="name">
+                <small id="err-name" class="error-msg"></small>
+            </div>
 
-                            
-                        </div>
-                        
-                        <div class="form-field field-education full-width">
-                            <label class="req">التعليم: </label>
-                            <textarea rows="5"></textarea>
-                        </div>
+            <!-- تاريخ الميلاد -->
+            <div class="form-field field-date">
+                <label for="jt-dob" class="req">تاريخ الميلاد: </label>
+                <input type="date" id="jt-dob" name="dob">
+                <small id="err-dob" class="error-msg"></small>
+            </div>
 
-                        <div class="form-field full-width">
-                            <label>رسالة إضافية: </label>
-                            <textarea rows="5"></textarea>
-                        </div>
-                        
-                        <div class="text-center">
-                            <input type="file" required id="pic" class="visually-hidden">
-                            <label for="pic" class="upload-btn req">إضافة صورة</label>
-                        </div>
+            <!-- البريد الإلكتروني -->
+            <div class="form-field full-width">
+                <label for="jt-email" class="req">البريد الإلكتروني: </label>
+                <input type="email" id="jt-email" name="email">
+                <small id="err-email" class="error-msg"></small>
+            </div>
 
-                        <div class="text-center submit-area">
-                            <button type="submit" class="btn-submit">إرسال</button>
-                        </div>
-                        
-                    </form>
+            <!-- الخبرات -->
+            <div class="form-field full-width">
+                <label for="jt-exp" class="req">الخبرات: </label>
+                <textarea id="jt-exp" name="experience" rows="3"></textarea>
+                <small id="err-exp" class="error-msg"></small>
+            </div>
+
+            <!-- المهارات -->
+            <div class="form-field full-width">
+                <label for="jt-skills" class="req">المهارات: </label>
+                <textarea id="jt-skills" name="skills" rows="3"></textarea>
+                <small id="err-skills" class="error-msg"></small>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- التعليم -->
+    <div class="form-field field-education full-width">
+        <label for="jt-edu" class="req">التعليم: </label>
+        <textarea id="jt-edu" name="education" rows="5"></textarea>
+        <small id="err-edu" class="error-msg"></small>
+    </div>
+
+    <!-- حقل الصورة -->
+    <div class="text-center submit-area">
+        <input type="file" id="jt-photo" name="photo" class="visually-hidden" accept="image/*">
+        <label for="jt-photo" class="upload-btn req">إضافة صورة</label>
+        <small id="err-photo" class="error-msg" style="display:block; margin-top:0.5rem;"></small>
+    </div>
+
+    <!-- زر الإرسال -->
+    <div class="text-center submit-area">
+        <button type="submit" class="btn-submit">إرسال</button>
+    </div>
+</form>
+
                 </div>
         </main>
 <footer>
@@ -129,5 +157,7 @@
       <p class="copyright">جميع الحقوق محفوظة لحُجة © 2025</p>
     </div>
   </footer>
+  <script src="theme.js"></script>
+  <script src="about.js"></script>
     </body>
 </html>
