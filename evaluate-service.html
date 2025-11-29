@@ -7,7 +7,7 @@
 </head>
 <body>
 <header class="main-header">
-        <div class="top-announcement-bar">
+         <div class="top-announcement-bar">
             <p>أحصل على استشارة مجانية عند انضمامك للمرة الأولى! </p>
         </div>
         <div class="main-nav-bar">
@@ -32,7 +32,7 @@
 
   <main>
   <h1 class="main-title">تقييم خدمة</h1>
-    <form class="my-form" dir="rtl" action="evaluate-service.html" method="post">
+    <form class="my-form" dir="rtl" action="evaluate-service.html" method="post" novalidate>
       <div class="sel">
         <p class="req">اختر خدمة: </p>
           <select class="choose full-width form-field" name="service" required>
@@ -41,6 +41,7 @@
             <option value="خدمات العقود">خدمات العقود</option>
 		        <option value="الاستشارات القانونية">الاستشارات القانونية</option>
           </select>
+		   <p class="error-msg" id="service-error"></p>
       </div>
 
         <div class="sel">
@@ -52,11 +53,12 @@
             <li><label><input type="radio" name="rating" value="غير راض"> غير راض</label></li>
             <li><label><input type="radio" name="rating" value="غير راض جدا"> غير راض جدا</label></li>
           </ul>
+			 <p class="error-msg" id="rating-error"></p>
         </div>
 
           <label for="feedback" class="req">ملاحظاتك:</label>
           <textarea id="feedback" name="feedback" rows="6" cols="50" placeholder="شاركنا رأيك حول الخدمة..." required></textarea>
-
+           <p class="error-msg" id="feedback-error"></p>
           <div class="text-center submit-area">
                             <button type="submit" class="btn-submit">إرسال</button>
                         </div>
@@ -100,5 +102,8 @@
       <p class="copyright">جميع الحقوق محفوظة لحُجة © 2025</p>
     </div>
   </footer>
+  <script src="theme.js"></script>
+<script src="evaluate.js"></script>
 </body>
+
 </html>
