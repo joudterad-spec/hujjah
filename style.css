@@ -672,7 +672,7 @@ td img{
     text-align: center;
 }
 
-.btn-submit {
+.btn-submit, .btn-del {
     text-align: center;
     width: 80px;
     padding: 12px 20px;
@@ -684,6 +684,12 @@ td img{
     font-size: 15px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-weight: bold;
+}
+
+.btn-del {
+    display: block;
+    margin: 25px auto;
+    text-align: center;
 }
 
 
@@ -874,25 +880,25 @@ footer {
     width: 100%;
 }
 
-/* جعل القياس أسهل */
+ 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* الصور تكون مرنة */
+ 
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-/* نلفّ الهيدر بشكل مرتب */
+ 
 .main-header {
   width: 100%;
 }
 
-/* شريط الناف بار العلوي */
+ 
 .main-nav-bar {
   max-width: 1200px;
   margin: 0 auto;
@@ -920,11 +926,9 @@ img {
 
 .main-nav a.nav-item {
   text-decoration: none;
-  /* لو عندك ألوان سابقة، هذي ما تلغيها لو حطيتيها قبل بخصائص مختلفة */
-}
+ }
 
-/* كرت الهيرو في الهوم بيج */
-.homepage-card {
+ .homepage-card {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
@@ -975,7 +979,9 @@ img {
   padding: 1.5rem;
 }
 /* end for big screens */
+
 /*strat for mid screens*/
+
 /* شاشات أقل من 992px تقريبًا (تابلت) */
 @media (max-width: 992px) {
   .main-nav-bar {
@@ -1071,3 +1077,286 @@ img {
     align-items: flex-start;
   }
 }
+/*theme switch*/
+ 
+:root {
+  --bg: #f5f5f7;
+  --text: #032615;
+  --surface: #ffffff;
+  --card-bg: #ffffff;
+  --primary: #06402B;
+  --primary-light: #1f7e5c;
+  --footer-bg: #032615;
+}
+
+ 
+.dark-theme {
+  --bg: #0d1b15;
+  --text: #e9f7ef;
+  --surface: #143126;
+  --card-bg: #1c3d31;
+  --primary: #4bd3a3;
+  --primary-light: #2cab80;
+  --footer-bg: #07130e;
+}
+ 
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme p,
+.dark-theme span,
+.dark-theme a,
+.dark-theme li,
+.dark-theme td,
+.dark-theme th,
+.dark-theme label,
+.dark-theme strong {
+    color: #e5fdf3 !important;
+}
+
+ 
+.dark-theme .card p,
+.dark-theme .card-g p,
+.dark-theme .comment,
+.dark-theme #hero-p,
+.dark-theme #hero-title,
+.dark-theme #services p,
+.dark-theme #services-title,
+.dark-theme #testimonials-title,
+.dark-theme #tip-title,
+.dark-theme #users {
+    color: #e5fdf3 !important;
+}
+
+ 
+.dark-theme footer,
+.dark-theme footer p,
+.dark-theme footer a {
+    color: #e5fdf3 !important;
+}
+
+/* نصوص داخل info overlay */
+.dark-theme .card .info {
+    color: #ffffff !important;
+}
+
+
+ body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+ header, .main-nav-bar, .homepage-card, .card, .card-g, 
+.data-table-container, .scroll-card, .frq-card,
+.faq-question-form-section, .tip-card, .my-form {
+  background-color: var(--surface);
+}
+
+ 
+h1, h2, h3, p, a, span {
+  color: var(--text);
+}
+
+ 
+.card, .card-g, .scroll-card {
+  background-color: var(--card-bg);
+}
+
+ 
+.btn a, .btn-submit, .btn-del, .card-button, .upload-btn {
+  background-color: var(--primary);
+}
+
+.btn a:hover, .btn-submit:hover, .btn-del:hover, .upload-btn:hover {
+  background-color: var(--primary-light);
+}
+
+ 
+footer {
+  background-color: var(--footer-bg);
+}
+
+ 
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 15px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#theme-toggle:hover {
+  background-color: var(--primary-light);
+}
+/*Back to top button*/
+ 
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;  
+    padding: 12px 16px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: none; /* مخفي بالبداية */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-4px);
+}
+/*control footer color in light mode*/
+ 
+body:not(.dark-theme) footer,
+body:not(.dark-theme) footer p,
+body:not(.dark-theme) footer a {
+  color: #F8F8F8 !important;
+}
+/*real time clock*/
+.clock-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: inherit; /* ياخذ نفس لون الثيم */
+}
+
+ 
+.dark-theme .my-form,
+.dark-theme .frq-card,
+.dark-theme .faq-question-form-section {
+    background-color: #1c3d31 !important;
+    border-color: #355c4b !important;
+}
+
+ 
+.dark-theme input[type="text"],
+.dark-theme input[type="date"],
+.dark-theme input[type="email"],
+.dark-theme input[type="number"],
+.dark-theme input[type="password"],
+.dark-theme textarea,
+.dark-theme select,
+.dark-theme .choose,
+.dark-theme .sorting {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border-color: #777 !important;
+}
+
+ 
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+    color: #cccccc !important;
+}
+
+ 
+.dark-theme .btn-submit,
+.dark-theme .btn-del,
+.dark-theme .upload-btn,
+.dark-theme .card-button,
+.dark-theme .btn a {
+    background-color: #1f7e5c !important;
+    color: #ffffff !important;
+}
+
+
+
+ 
+.dark-theme input:focus,
+.dark-theme textarea:focus,
+.dark-theme select:focus {
+    border-color: #9ae9c8 !important;
+    outline: none;
+}
+.error-msg {
+    color: #ff4d4d;         
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
+ 
+.dark-theme .error-msg {
+    color: #ff8080;
+}
+
+#clock {
+  color: #F8F8F8 !important;
+}
+
+.dark-theme #clock {
+  color: #e5fdf3 !important;
+}
+
+/* صندوق الطلبات */
+.requests-container {
+    width: 65%;
+    margin: 30px auto;
+}
+
+/* البطاقة */
+.request-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 18px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    line-height: 1.9;
+    font-size: 17px;
+    color: #032615;
+    transition: 0.25s;
+}
+
+/* تأثير بسيط */
+.request-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+.request-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #06402B;
+}
+
+.separator {
+    height: 1px;
+    background: #dcdcdc;
+    margin: 15px 0;
+} 
+
+.error {
+    border: 2px solid #b40a0a !important;
+    background: #fff1f1;
+}
+
+
+/* اهتزاز */
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
+
